@@ -88,7 +88,7 @@ $M({
                     var minutes = dt.getMinutes() < 10 ? "0" + dt.getMinutes() : dt.getMinutes();
                     var time = hours + ":" + minutes;
 
-                    fetch("/sendMessage", {
+                    fetch("https://serverformyusers.herokuapp.com/sendMessage", {
                         method: "POST",
                         body: JSON.stringify({
                             time,
@@ -111,7 +111,7 @@ $M({
 });
 
 function update() {
-    fetch("/messages").then(object => object.json()).then((data) => {
+    fetch("https://serverformyusers.herokuapp.com/messages").then(object => object.json()).then((data) => {
         if (Array.isArray(data.messages)) {
             manipulate(data.messages);
         } else {
