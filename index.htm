@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Chat</title>
+    <meta name="description" content="Chat Anonymously">
+    <meta name="keywords" content="AnonymousChat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="./my_libs/design.js"></script>
+    <script src="./my_libs/mod.min.js"></script>
+    <script src="./my_libs/Snackbar.js"></script>
+    <meta property="og:title" content="Title" />
+    <meta property="og:site_name" content="Anonymous Chat" />
+    <meta property="og:description" content="Chat with unknown peoples just for fun." />
+    <meta property="og:image" content="./favicon.ico" />
+</head>
+
+<body>
+    <!--INTRO-->
+    <div id="intro" class="wrapper-xy-center fitxy tshadow">
+        <h1 class="title">Anonymous Chat</h1>
+        <div class="progress" id="progress"></div>
+    </div>
+
+    <div id="register" class="wrapper-xy-center fitxy tshadow none">
+        <div class="card">
+            <div class="title">Register</div>
+            <hr>
+            <input spellcheck="false" id="username" class="fullwidth" type="text"
+                placeholder="Type your name (optional)" />
+        </div>
+    </div>
+    <div id="main" style="margin-top: 2em;" class="wrapper-xy-center none">
+        <div class="card">
+            <div class="title">Chat</div>
+            <hr>
+            <div id="messages">
+                <!--MESSAGE-->
+                <div class="message">
+                    <div class="text">Some Text...</text>
+                        <div class="info">
+                            <img class="icon" src="../res/images.png" alt="Unknown" />
+                            <div class="username">Some Name</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="sendmessage">
+                <input spellcheck="false" id="message" type="text" class="fullwidth"
+                    placeholder="Type your message.." />
+            </div>
+            <p style="text-align: right; color: #0aa; font-size: 12px;">Created By Humoyun Dev</p>
+        </div>
+        <script src="./scripts/main.js" type="module" defer></script>
+</body>
+
+</html>
